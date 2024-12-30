@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #e84343;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(251, 235, 206);
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(93, 81, 58);
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(191, 168, 125);
+    font-size: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(251, 235, 206);
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    padding: 2%;
+    background-color: rgb(255, 248, 235);
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    color: rgb(93, 81, 58);
+    font-size: large;
+    border: 5px solid rgb(93, 81, 58);
+    border-bottom: none;
+}
+
+.tab-content {
+    /*display: none;*/
+}
+
+.instructions {
+    color: rgb(93, 81, 58);
+    font-size: 20px;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    width: 9vw;
+    margin: 3%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border: 2px solid rgb(180, 176, 171);
+    border-radius: 10px;
+    color: rgb(93, 81, 58);
+}
+
+.ingredient-img {
+    height: 70%;
+    margin-top: 5%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 4%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding-top: 3%;
+}
+
+#left {
+    width: 30%;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 10%;
+    background-color: rgb(251, 235, 206);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border: 5px solid rgb(93, 81, 58);
+}
+
+#recipe-instructions {
+    padding-left: 9%;
+    padding-top: 5%;
+}
+
+#ingredient-info {
+    padding-top: 4%;
+}
+
+#ingredients-list {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mug {
+    height: 60%;
+    margin-bottom: 12%;
+}
+
+#stir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 30%;
+    background-color: rgb(72, 203, 101);
+    border-radius: 10px;
+    border: 5px solid rgb(46, 160, 71);
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#stir:hover {
+    background-color: rgb(115, 224, 138);
+}

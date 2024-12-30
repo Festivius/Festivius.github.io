@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="snowflakes.css">
+</head>
+<body>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+    <div class="snowflake">&#10052;</div>
+
+    <div id="container">
+        <div id="header">
+            <h1>make your own hot choco! ❤️☕️🎄❄️</h1>
+        </div>
+
+        <div id="content">
+            <div id="left">
+                <div id="nav-bar">
+                    <input type="radio" id="recipe-button" name="tab" checked>
+                    <label for="recipe-button" class="nav-button">recipe</label>
+
+                    <input type="radio" id="ingredients-button" name="tab">
+                    <label for="ingredients-button" class="nav-button">ingredients</label>
+
+                    <input type="radio" id="topping-button" name="tab">
+                    <label for="topping-button" class="nav-button">toppings</label>
+                </div>
+
+                <div id="menu">
+                    <div id="recipe" class="tab-content">
+                        <h2>recipe</h2>
+                        <h3>hot chocolate, serves 1</h3>
+                        <div class="instructions" id="recipe-instructions">
+                            <ol>
+                                <li>pour 1 cup of milk into the mug</li>
+                                <li>add 3 tablespoons of chocolate or cocoa powder</li>
+                                <li>add 1 or 2 tablespoons of sugar</li>
+                                <li>drag your choice of toppings into the mug!</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="ingredients" class="tab-content">
+                        <h2>ingredients</h2>
+                        <div class="instructions" id="ingredient-info">click on a box to add that ingredient to your hot chocolate!</div>
+                        <div id="ingredients-list">
+                            <button class="ingredient">
+                                <img class="ingredient-img" src="images/milk.png">
+                                milk
+                            </button>
+                            <button class="ingredient">
+                                <img class="ingredient-img" src="images/chocolate.png">
+                                chocolate
+                            </button>
+                            <button class="ingredient">
+                                <img class="ingredient-img" src="images/sugar.png">
+                                sugar
+                            </button>
+                        </div>
+                    </div>
+                    <div id="toppings" class="tab-content">
+                        <h2>toppings</h2>
+                        <div class="topping" draggable="true">marshmallows</div>
+                        <div class="topping" draggable="true">whipped cream</div>
+                        <div class="topping" draggable="true">sprinkles</div>
+                        <div class="topping" draggable="true">cinnamon</div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="mug">
+                    <img id="mug-image" src="images/mug.png">
+                </div>
+                <button id="stir">Stir!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
