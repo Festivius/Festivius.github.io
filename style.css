@@ -215,6 +215,8 @@ label[for="topping-button"] {
     margin-left: 9%;
 }
 
+
+
 #stir {
     display: flex;
     flex-direction: column;
@@ -222,11 +224,12 @@ label[for="topping-button"] {
     justify-content: center;
     height: 10%;
     width: 25%;
-    background-color: rgb(244, 235, 157);
     border-radius: 10px;
+    font-size: x-large;
     border: 5px solid rgb(216, 190, 124);
     color: rgb(93, 81, 58);
-    font-size: x-large;
+
+    background-color: rgb(244, 235, 157);
     cursor: pointer;
 }
 
