@@ -38,16 +38,30 @@ toppingbutton.addEventListener('click', () => {
 
 
 
-const ingredientList = document.getElementById('ingredients-list');
+const ingredientList = document.querySelectorAll('.base');
 const milk = document.getElementById('milk');
 const chocolate = document.getElementById('chocolate');
 const sugar = document.getElementById('sugar');
+const stir = document.getElementById('stir');
+const mugImg = document.getElementById('mug-image');
 
 let milkUsed = false, chocolateUsed = false, sugarUsed = 0;
 
+ingredientList.forEach((item) => {
+    console.log(item);
+    item.addEventListener('mousedown', () => {
+        item.classList.add('shrink');
+    });
+
+    item.addEventListener('mouseup', () => {
+        item.classList.remove('shrink');
+    });
+});
+
 milk.addEventListener('click', () => {
     milkUsed = true;
-    // update the hot choco image
+    mugImg.src = 'images/mug1.png';
+
     milk.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
     milk.style.cursor = 'default';
     document.getElementById('milk-img').style.opacity = '0.4';
@@ -56,7 +70,8 @@ milk.addEventListener('click', () => {
 
 chocolate.addEventListener('click', () => {
     chocolateUsed = true;
-    // update the hot choco image
+    mugImg.src = 'images/mug2.png';
+
     chocolate.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
     chocolate.style.cursor = 'default';
     document.getElementById('chocolate-img').style.opacity = '0.4';
@@ -66,13 +81,27 @@ chocolate.addEventListener('click', () => {
 sugar.addEventListener('click', () => {
     sugarUsed += 1;
     // update the hot choco image
-    if (sugarUsed == 4) {
+    if (sugarUsed == 1) {
+        mugImg.src = 'images/mug3.png';
+    } else if (sugarUsed == 2) {
+        mugImg.src = 'images/mug4.png';
+    } else if (sugarUsed == 3) {
+        mugImg.src = 'images/mug5.png';
+    } else {
         sugar.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
         sugar.style.cursor = 'default';
         document.getElementById('sugar-img').style.opacity = '0.4';
         document.getElementById('sugar-txt').style.color = 'rgba(93, 81, 58, 0.4)';
     }
 });
+
+stir.addEventListener('click', () => {
+    mugImg.src = 'images/mug6.png';
+
+    stir.style.backgroundColor = 'hsl(36, 5.40%, 81.80%)'
+    stir.style.cursor = 'default';
+    document.getElementById('stir-txt').style.color = 'rgba(93, 81, 58, 0.4)';
+}, { once: true });
 
 
 
