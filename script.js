@@ -36,6 +36,46 @@ toppingbutton.addEventListener('click', () => {
     toppingbutton.style.height = '114%';
 });
 
+
+
+const ingredientList = document.getElementById('ingredients-list');
+const milk = document.getElementById('milk');
+const chocolate = document.getElementById('chocolate');
+const sugar = document.getElementById('sugar');
+
+let milkUsed = false, chocolateUsed = false, sugarUsed = 0;
+
+milk.addEventListener('click', () => {
+    milkUsed = true;
+    // update the hot choco image
+    milk.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
+    milk.style.cursor = 'default';
+    document.getElementById('milk-img').style.opacity = '0.4';
+    document.getElementById('milk-txt').style.color = 'rgba(93, 81, 58, 0.4)';
+}, { once: true });
+
+chocolate.addEventListener('click', () => {
+    chocolateUsed = true;
+    // update the hot choco image
+    chocolate.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
+    chocolate.style.cursor = 'default';
+    document.getElementById('chocolate-img').style.opacity = '0.4';
+    document.getElementById('chocolate-txt').style.color = 'rgba(93, 81, 58, 0.4)';
+}, { once: true });
+
+sugar.addEventListener('click', () => {
+    sugarUsed += 1;
+    // update the hot choco image
+    if (sugarUsed == 4) {
+        sugar.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
+        sugar.style.cursor = 'default';
+        document.getElementById('sugar-img').style.opacity = '0.4';
+        document.getElementById('sugar-txt').style.color = 'rgba(93, 81, 58, 0.4)';
+    }
+});
+
+
+
 toppingImages.forEach((img) => {
     dragElement(img);
 });
