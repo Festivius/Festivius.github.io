@@ -145,6 +145,13 @@ label[for="topping-button"] {
     flex-wrap: wrap
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -216,7 +223,6 @@ label[for="topping-button"] {
 #mug {
     max-height: 60vh;
     max-width: 60vw;
-    margin-bottom: 5vh;
 }
 
 #stir {
@@ -224,9 +230,10 @@ label[for="topping-button"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 7vh;
-    width: 25%;
+    height: 6.8vh;
+    width: 14vw;
     border-radius: 10px;
+    margin-right: 3vw;
     font-size: x-large;
     border: 5px solid rgb(216, 190, 124);
     color: rgb(93, 81, 58);
@@ -239,6 +246,6 @@ label[for="topping-button"] {
 }
 
 .shrink {
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
