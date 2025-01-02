@@ -149,4 +149,3 @@ function dragElement(img) {
         dragElement(imgCopy);
     }
 }
-
